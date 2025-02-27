@@ -39,5 +39,11 @@ public class GreetingController {
         return "{\"message\": \"" + greetingService.getGreetingMessage() + "\"}";
     }
 
+    //    UC3 code files
+    @GetMapping("/personalized")
+    public String getGreeting(@RequestParam(required = false) String firstName,
+                              @RequestParam(required = false) String lastName) {
+        return "{\"message\": \"" + greetingService.getGreetingMessage(firstName, lastName) + "\"}";
+    }
 }
 
