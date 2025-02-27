@@ -34,9 +34,10 @@ public class GreetingController {
     private GreetingService greetingService;
 
 
-    @GetMapping
+    @GetMapping("/message")
     public String getGreeting2() {
         return "{\"message\": \"" + greetingService.getGreetingMessage() + "\"}";
     }
 
 }
+
