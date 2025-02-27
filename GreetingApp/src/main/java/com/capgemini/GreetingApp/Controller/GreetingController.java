@@ -1,6 +1,7 @@
 package com.capgemini.GreetingApp.Controller;
 
-
+import com.capgemini.GreetingApp.Service.GreetingService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -27,6 +28,15 @@ public class GreetingController {
     @DeleteMapping
     public String deleteGreeting() {
         return "{\"message\": \"Greeting deleted!\"}";
+    }
+
+    @Autowired
+    private GreetingService greetingService;
+
+
+    @GetMapping
+    public String getGreeting2() {
+        return "{\"message\": \"" + greetingService.getGreetingMessage() + "\"}";
     }
 
 }
