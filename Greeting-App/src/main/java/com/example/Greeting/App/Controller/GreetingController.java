@@ -1,4 +1,4 @@
-package com.example.Greeting.App;
+package com.example.Greeting.App.Controller;
 
 import org.springframework.web.bind.annotation.*;
 import java.util.HashMap;
