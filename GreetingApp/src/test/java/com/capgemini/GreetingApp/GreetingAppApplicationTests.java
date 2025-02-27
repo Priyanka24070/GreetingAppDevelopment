@@ -1,10 +1,10 @@
-package com.example.Greeting.App;
+package com.capgemini.GreetingApp;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Uc1GreetingAppApplicationTests {
+class GreetingAppApplicationTests {
 
 	@Test
 	void contextLoads() {
